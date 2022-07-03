@@ -1,7 +1,23 @@
 import React from "react";
+import { Grid, Paper, Typography, Box } from "@mui/material";
 
 const TourCard = () => {
-  return <div>TourCard</div>;
+  return (
+    <Grid item xs={3}>
+      <Paper elevation={3}>
+        <img
+          className="img"
+          src="https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg"
+          alt="tour"
+        />
+        <Box padding={1}>
+          <Typography variant="subtitle1" component="h2">
+            Immerse into the Falls
+          </Typography>
+        </Box>
+      </Paper>
+    </Grid>
+  );
 };
 
 export default TourCard;
